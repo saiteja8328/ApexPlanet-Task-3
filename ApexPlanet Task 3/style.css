@@ -1,0 +1,54 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 1rem;
+  background-color: #f0f0f0;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+section {
+  background: white;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 8px;
+}
+
+.carousel-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.carousel-img {
+  width: 300px;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .carousel-container {
+    flex-direction: column;
+  }
+
+  .carousel-img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  button {
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+}
